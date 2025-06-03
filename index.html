@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up. Down. Repeat. — Enock's Day at Campus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">UP. DOWN. REPEAT.</h1>
+            <p class="subtitle">ENOCK'S DAY AT CAMPUS</p>
+            <div class="scroll-indicator">
+                <span>SCROLL TO ENTER</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div class="noise-overlay"></div>
+    </section>
+
+    <!-- Scene 1: Wake Up -->
+    <section class="scene scene-1" id="scene-1">
+        <div class="scene-content">
+            <div class="time-stamp">08:00 AM</div>
+            <h2 class="scene-title">REALITY HITS</h2>
+            <p class="scene-caption">"Snoozed 3 alarms. Late again."</p>
+            <div class="visual-element wake-up">
+                <div class="alarm-block">BEEP</div>
+                <div class="alarm-block delay-1">BEEP</div>
+                <div class="alarm-block delay-2">BEEP</div>
+            </div>
+        </div>
+        <div class="scene-bg bg-black"></div>
+    </section>
+
+    <!-- Scene 2: Breakfast -->
+    <section class="scene scene-2" id="scene-2">
+        <div class="scene-content">
+            <div class="time-stamp">08:30 AM</div>
+            <h2 class="scene-title">D2 FEEDS ME</h2>
+            <p class="scene-caption">"3 pancakes. 2 regrets. 1 coffee."</p>
+            <div class="visual-element breakfast-grid">
+                <div class="food-block pancake">PANCAKE</div>
+                <div class="food-block coffee">COFFEE</div>
+                <div class="food-block regret">REGRET</div>
+                <div class="food-block pancake">PANCAKE</div>
+                <div class="food-block regret">REGRET</div>
+                <div class="food-block pancake">PANCAKE</div>
+            </div>
+        </div>
+        <div class="scene-bg bg-beige"></div>
+    </section>
+
+    <!-- Scene 3: Class -->
+    <section class="scene scene-3" id="scene-3">
+        <div class="scene-content">
+            <div class="time-stamp">09:00 AM</div>
+            <h2 class="scene-title">LINES OF LOGIC</h2>
+            <p class="scene-caption">"500 lines. 1 bug. 0 clue."</p>
+            <div class="visual-element code-block">
+                <div class="code-line">function debug() {</div>
+                <div class="code-line">  console.log("WHERE IS THE BUG?");</div>
+                <div class="code-line error-line">  undefined.method(); // ERROR</div>
+                <div class="code-line">  return despair;</div>
+                <div class="code-line">}</div>
+            </div>
+        </div>
+        <div class="scene-bg bg-maroon"></div>
+    </section>
+
+    <!-- Scene 4: Library -->
+    <section class="scene scene-4" id="scene-4">
+        <div class="scene-content">
+            <div class="time-stamp">1:00 PM</div>
+            <h2 class="scene-title">INTO THE QUIET ZONE</h2>
+            <p class="scene-caption">"Silence is violent when you're tired."</p>
+            <div class="visual-element library-mood">
+                <div class="silence-bar"></div>
+                <div class="silence-bar"></div>
+                <div class="silence-bar"></div>
+                <div class="tired-eyes">👁️👁️</div>
+            </div>
+        </div>
+        <div class="scene-bg bg-dark-beige"></div>
+    </section>
+
+    <!-- Scene 5: Gym -->
+    <section class="scene scene-5" id="scene-5">
+        <div class="scene-content">
+            <div class="time-stamp">4:00 PM</div>
+            <h2 class="scene-title">TO LIFT OR TO NAP</h2>
+            <p class="scene-caption">"Muscles scream. Mind screams louder."</p>
+            <div class="visual-element gym-choice">
+                <div class="choice-block lift">LIFT</div>
+                <div class="vs">VS</div>
+                <div class="choice-block nap">NAP</div>
+            </div>
+        </div>
+        <div class="scene-bg bg-black"></div>
+    </section>
+
+    <!-- Scene 6: Dinner -->
+    <section class="scene scene-6" id="scene-6">
+        <div class="scene-content">
+            <div class="time-stamp">6:00 PM</div>
+            <h2 class="scene-title">D2 AGAIN?</h2>
+            <p class="scene-caption">"Rice. Chicken. Existential dread."</p>
+            <div class="visual-element dinner-repeat">
+                <div class="plate">
+                    <div class="food-item rice">RICE</div>
+                    <div class="food-item chicken">CHICKEN</div>
+                    <div class="food-item dread">DREAD</div>
+                </div>
+            </div>
+        </div>
+        <div class="scene-bg bg-beige"></div>
+    </section>
+
+    <!-- Scene 7: Sleep -->
+    <section class="scene scene-7" id="scene-7">
+        <div class="scene-content">
+            <div class="time-stamp">10:00 PM</div>
+            <h2 class="scene-title">CHROME TABS > PILLOW</h2>
+            <p class="scene-caption">"One more YouTube. Just one."</p>
+            <div class="visual-element tabs-overlay">
+                <div class="tab">YouTube</div>
+                <div class="tab">Reddit</div>
+                <div class="tab">Instagram</div>
+                <div class="tab">TikTok</div>
+                <div class="tab">Netflix</div>
+                <div class="tab">Sleep?</div>
+            </div>
+            <div class="restart-button">
+                <span>REPEAT CYCLE</span>
+            </div>
+        </div>
+        <div class="scene-bg bg-maroon"></div>
+    </section>
+
+    <!-- Sound Toggle -->
+    <div class="sound-toggle">
+        <span id="sound-status">SOUND: ON</span>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="alarm-sound" preload="auto">
+        <source src="public/alarm.mp3" type="audio/mpeg">
+        <source src="public/alarm.wav" type="audio/wav">
+        <source src="public/alarm.ogg" type="audio/ogg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
